@@ -77,7 +77,8 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("postgresql://neondb_owner:cETK0XmIjne5@ep-dry-field-a2qgit26.eu-central-1.aws.neon.tech/city_geek_calm_111466"))
+    'default': dj_database_url.parse(
+        os.environ.get("DATABASE_URL"))
 }
 
 
