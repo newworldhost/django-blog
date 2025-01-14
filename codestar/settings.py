@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8pcaz52o)bl240p9u4338_6aosro8&#v-hmjm2cnya81o3(#!o'
+SECRET_KEY = 'django-insecure-s1m-7_my^!07(yee245esr!6+=@r#qj@el@3rvs2%t60a43g90'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['newworldhost-djangoblog-wwvzvq13lsd.ws.codeinstitute-ide.net','127.0.0.1']
+ALLOWED_HOSTS = ['8000-newworldhost-djangoblog-wwvzvq13lsd.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
 ]
 
 MIDDLEWARE = [
