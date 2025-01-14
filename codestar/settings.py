@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-s1m-7_my^!07(yee245esr!6+=@r#qj@el@3rvs2%t60a43g90
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-newworldhost-djangoblog-wwvzvq13lsd.ws.codeinstitute-ide.net','django-blog-latest-2b842e48da08.herokuapp.com']
+ALLOWED_HOSTS = ['8000-newworldhost-djangoblog-wwvzvq13lsd.ws.codeinstitute-ide.net','django-blog-latest-2b842e48da08.herokuapp.com', "localhost"]
 
 
 # Application definition
