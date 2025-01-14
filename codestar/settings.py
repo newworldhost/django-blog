@@ -9,9 +9,12 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+import os
+import dj_database_url
 from pathlib import Path
-
+#adding env.py to file
+if os.path.exists('env.py'):
+    import env
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s1m-7_my^!07(yee245esr!6+=@r#qj@el@3rvs2%t60a43g90'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['8000-newworldhost-djangoblog-wwvzvq13lsd.ws.codeinstitute-ide.net','django-blog-latest-2b842e48da08.herokuapp.com']
 
@@ -73,12 +76,8 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse(os.environ.get("postgresql://neondb_owner:cETK0XmIjne5@ep-dry-field-a2qgit26.eu-central-1.aws.neon.tech/city_geek_calm_111466"))
 }
 
 
