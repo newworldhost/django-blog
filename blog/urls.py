@@ -7,6 +7,6 @@ from . import views
 
 
 urlpatterns = [
-    path("", include("blog.urls"), name="blog-urls"),
+    path('blog', include("blog.urls"), name="blog-urls"),
     path('', views.PostList.as_view(), name='home'),
 ]
