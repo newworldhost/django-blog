@@ -20,5 +20,5 @@ from blog.views import PostList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', PostList.as_view, name='blog'),
+    path('blog/', PostList.as_view(), name='blog'),
 ]
