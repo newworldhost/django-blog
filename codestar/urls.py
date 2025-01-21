@@ -20,6 +20,6 @@ from blog.views import PostList
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('posts/', PostList.as_view(), name='blog'),
+    path('', include("blog.urls"), name="blog-urls"),
     path('summernote/', include('django_summernote.urls')),
 ]
